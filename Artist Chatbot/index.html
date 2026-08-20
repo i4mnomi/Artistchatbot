@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ARTIST INTEL — Rapper & Music Data Chat</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+
+  <header class="hdr">
+    <div class="hdr-row">
+      <div class="brand">
+        <div class="eq" id="eq">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <h1>ARTIST INTEL</h1>
+      </div>
+      <div class="live"><span class="dot"></span>LOOKUP</div>
+    </div>
+    <p class="hdr-sub">Liner notes on <b>rap &amp; hip-hop</b> — Pakistan · India · Global. No invented numbers.</p>
+  </header>
+
+  <main class="chat" id="chat">
+    <div class="empty" id="emptyState">
+      <h2>Ask about any artist</h2>
+      <p>Get discography, streaming stats, concerts, and achievements — organized like a stat sheet, with every time-sensitive number flagged.</p>
+      <ul>
+        <li>"Give me Talha Anjum's complete profile"</li>
+        <li>"MC Stan vs Divine — compare their careers"</li>
+        <li>"What albums has Sidhu Moose Wala released?"</li>
+      </ul>
+    </div>
+  </main>
+
+  <div class="chips" id="chips">
+    <div class="chip" data-q="Give me Talha Anjum's complete profile.">Talha Anjum</div>
+    <div class="chip" data-q="Give me MC Stan's complete profile.">MC Stan</div>
+    <div class="chip" data-q="Give me Young Stunners' complete profile.">Young Stunners</div>
+    <div class="chip" data-q="Compare Divine vs Raftaar.">Divine vs Raftaar</div>
+    <div class="chip" data-q="Give me Sidhu Moose Wala's complete profile.">Sidhu Moose Wala</div>
+    <div class="chip" data-q="Give me Eminem's complete profile.">Eminem</div>
+  </div>
+
+  <form class="composer" id="composer">
+    <input id="input" type="text" placeholder="Ask about a rapper or artist…" autocomplete="off" />
+    <button class="send" type="submit" id="sendBtn" aria-label="Send">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 12L20 4L14 20L11 13L4 12Z" fill="#1a1406"/>
+      </svg>
+    </button>
+  </form>
+  <p class="footnote">Answers come from model knowledge, not a live feed — always confirm fast-moving numbers (streams, followers) at the source.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
